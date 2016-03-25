@@ -1,15 +1,52 @@
-<ion-navbar *navbar>
-  <ion-title>Tab 1</ion-title>
+<ion-navbar *navbar hideBackButton>
+
+  <ion-title>
+    ChillingTasty
+  </ion-title>
+
 </ion-navbar>
 
-<ion-content padding class="page1">
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>www/app/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+
+  <form (submit)="doSubmit($event)" [ngFormModel]="langForm">
+    <ion-list radio-group ngControl="langs">
+
+      <ion-list-header>
+        Entrée
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Basics</ion-label>
+        <ion-radio value="basics"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Salades</ion-label>
+        <ion-radio value="salades"></ion-radio>
+      </ion-item>
+
+      <ion-list-header>
+        Plats du Monde
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Plats</ion-label>
+        <ion-radio value="plats"></ion-radio>
+      </ion-item>
+      <ion-list-header>
+        Désserts
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Glasses</ion-label>
+        <ion-radio value="glasses"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Gateaux</ion-label>
+        <ion-radio value="gateaux"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Patisseries</ion-label>
+        <ion-radio value="patisseries"></ion-radio>
+      </ion-item>
+    </ion-list>
+  </form>
+
 </ion-content>
