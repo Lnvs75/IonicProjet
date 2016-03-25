@@ -3,10 +3,10 @@ var path = require('path');
 
 module.exports = {
   entry: [
-    path.normalize('es6-shim/es6-shim.min'),
-    'reflect-metadata',
-    path.normalize('zone.js/dist/zone-microtask'),
-    path.resolve('app/app')
+  path.normalize('es6-shim/es6-shim.min'),
+  'reflect-metadata',
+  path.normalize('zone.js/dist/zone-microtask'),
+  path.resolve('app/app')
   ],
   output: {
     path: path.resolve('www/build/js'),
@@ -15,26 +15,31 @@ module.exports = {
   },
   module: {
     loaders: [
-      {
-        test: /\.js$/,
-        loader: 'babel',
-        query: {
-          presets: ['es2015'],
-          plugins: ['transform-decorators-legacy']
-        },
-        include: path.resolve('app'),
-        exclude: /node_modules/
+    {
+      test: /\.js$/,
+      loader: 'babel',
+      query: {
+        presets: ['es2015'],
+        plugins: [
+        'transform-decorators-legacy',
+        'angular2-annotations',
+        'transform-class-properties',
+        'transform-flow-strip-types'
+        ]
       },
-      {
-        test: /\.js$/,
-        include: path.resolve('node_modules/angular2'),
-        loader: 'strip-sourcemap'
-      }
+      include: path.resolve('app'),
+      exclude: /node_modules/
+    },
+    {
+      test: /\.js$/,
+      include: path.resolve('node_modules/angular2'),
+      loader: 'strip-sourcemap'
+    }
     ],
     noParse: [
-      /es6-shim/,
-      /reflect-metadata/,
-      /zone\.js(\/|\\)dist(\/|\\)zone-microtask/
+    /es6-shim/,
+    /reflect-metadata/,
+    /zone\.js(\/|\\)dist(\/|\\)zone-microtask/
     ]
   },
   resolve: {
