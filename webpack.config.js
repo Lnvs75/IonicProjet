@@ -21,7 +21,10 @@ module.exports = {
       query: {
         presets: ['es2015'],
         plugins: [
-        'transform-decorators-legacy',
+          'angular2-annotations',
+          'transform-decorators-legacy',
+          'transform-class-properties',
+          'transform-flow-strip-types'
         ]
       },
       include: path.resolve('app'),
