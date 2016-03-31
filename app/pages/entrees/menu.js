@@ -3,7 +3,8 @@
  */
 import {Component} from 'angular2/core'
 import {IONIC_DIRECTIVES} from 'ionic-angular';
-
+import {NavController} from 'ionic-angular'
+import {MenuDetail} from './menuDetail'
 @Component({
     selector: 'menu',
     template: ` 
@@ -35,7 +36,7 @@ import {IONIC_DIRECTIVES} from 'ionic-angular';
       The most popular industrial group ever, and largely
       responsible for bringing the music to a mass audience.
     </p>
-    <button primary>
+    <button primary (click)="turnToDetail()">
         <ion-icon name="book"></ion-icon>
         Lire la Suite
     </button>
@@ -80,4 +81,12 @@ import {IONIC_DIRECTIVES} from 'ionic-angular';
     directives : [IONIC_DIRECTIVES]
 })
 
-export class Menu{}
+export class Menu{
+    
+    constructor(nav: NavController){
+        this.nav = nav;
+    }
+    turnToDetail(){
+        this.nav.push(MenuDetail);
+    }
+}
