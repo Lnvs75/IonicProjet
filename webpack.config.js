@@ -20,7 +20,7 @@ module.exports = {
         loader: 'babel',
         query: {
           presets: ['es2015'],
-          plugins: ['transform-decorators-legacy',
+          plugins: [
           'angular2-annotations',
           'transform-decorators-legacy',
           'transform-class-properties',

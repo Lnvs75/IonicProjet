@@ -1,12 +1,11 @@
 import {Page} from 'ionic-angular';
 //import {Page2} from '../page2/page2';
-import {App} from './app';
+
 
 @Page({
-  templateUrl: 'build/pages/page1/page1.html',
-  directives: [App]
+  templateUrl: 'build/pages/home/home.html'
 })
-export class Page1 {
+export class Home {
   
   /*goToPage2(){
     this.nav.push(Page2);

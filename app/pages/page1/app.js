@@ -1,11 +1,15 @@
-
 import {Component} from 'angular2/core'
-import {NavButton} from './nav-button'
+import {NavButton} from './navButton'
 
 @Component({
     selector: 'app',
-    template: `
+    template: `<h1>Livre de Recette</h1>
+        
         <nav-button></nav-button>
-   `,
+    `,
     directives: [NavButton]
 })
+
+export class App{
+
+}
