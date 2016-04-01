@@ -1,8 +1,13 @@
-import {Component} from 'angular2/core'
+import {Page} from 'ionic-angular'
+import {MenuEntree} from './pages/entrees/menuEntree'
+import {MenuDessert} from './pages/desserts/menuDessert';
 
-@Component({
-	selector: 'menu',
+@Page({
 	template:`
+<ion-navbar *navbar>
+	<ion-title>Menu</ion-title>
+</ion-navbar>
+<ion-content>
 	<ion-card class="mycardparams margintop">
 		<ion-card-header>
 			Entrée
@@ -27,8 +32,20 @@ import {Component} from 'angular2/core'
 			Personne n'a le temps pour faire attention au calories
 		</ion-card-content>
 	</ion-card>
+</ion-content>
 	`
 })
 
 export class MenuAria{
+	constructor(nav: NavController){
+		this.nav = nav;
+	}
+
+	turnToDessert(){
+		this.nav.push(MenuDessert);
+	}
+
+	turnToEntree(){
+		this.nav.push(MenuEntree);
+	}
 }

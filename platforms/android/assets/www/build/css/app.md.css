@@ -8898,3 +8898,15 @@ body {
 .contentcolor {
   background-color: #e0e0e0;
   opacity: 0.8; }
+
+.card {
+  width: 450px; }
+
+.card p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 200px; }
+
+.card1 {
+  width: 600px; }
