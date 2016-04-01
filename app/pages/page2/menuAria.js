@@ -30,5 +30,5 @@ import {Component} from 'angular2/core'
 	`
 })
 
-export class Menu{
+export class MenuAria{
 }

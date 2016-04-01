@@ -3,7 +3,7 @@
  */
 
 import {Page} from 'ionic-angular';
-import {MenuDetail} from 'menuDetailDessert';
+import {MenuDetailDessert} from './menuDetailDessert';
 import {NavController} from 'ionic-angular'
 
 @Page({
@@ -58,11 +58,11 @@ import {NavController} from 'ionic-angular'
 </ion-card>
 </ion-content>`
 })
-export class Menu{
+export class MenuDessert{
     constructor(nav: NavController){
         this.nav = nav
     }
     turnToMenuDetail(){
-        this.nav.push(MenuDetail)
+        this.nav.push(MenuDetailDessert)
     }
 }

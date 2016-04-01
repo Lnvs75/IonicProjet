@@ -4,7 +4,7 @@
 import {Page} from 'angular2/core'
 import {IONIC_DIRECTIVES} from 'ionic-angular';
 import {NavController} from 'ionic-angular'
-import {MenuDetail} from './menuDetail'
+import {MenuDetail} from './menuDetailEntree'
 @Page({
     template: ` 
 <ion-navbar *navbar>

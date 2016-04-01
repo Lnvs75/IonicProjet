@@ -44,4 +44,4 @@ import {Page} from 'ionic-angular';
     `
 })
 
-export class MenuDetail{}
+export class MenuDetailDessert{}
