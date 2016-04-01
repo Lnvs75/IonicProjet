@@ -21,10 +21,6 @@ import {Page} from 'ionic-angular';
         <li>Faites-le revenir dans un faitout avec un peu d'huile.</li>
         <li>Pendant ce temps, épluchez et coupez en cubes le potiron.</li>
     </ul>
-    <button primary>
-        <ion-icon name="book"></ion-icon>
-        Lire la Suite
-    </button>
   </ion-card-content>
 </ion-card>
 </ion-content>

@@ -15,8 +15,6 @@ import {MenuEntree} from './pages/entrees/menuEntree';
     <ion-content>
       <p>Salut mon frère!</p>
       <button (click)="turnToMenu()">Consulter le menu!</button>
-      <button (click)="turnToDessert()">Consulter les desserts!</button>
-      <button (click)="turnToEntree()">Consulter les entrées!</button>
     </ion-content>
     `
 })
