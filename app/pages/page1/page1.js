@@ -6,4 +6,5 @@ import {App} from './app';
   templateUrl: 'build/pages/page1/page1.html',
   directives: [App]
 })
+
 export class Page1 {}
