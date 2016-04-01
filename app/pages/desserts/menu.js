@@ -3,7 +3,8 @@
  */
 
 import {Page} from 'ionic-angular';
-import {MenuDetail} from '../desserts/menuDetail';
+import {MuffinChoco} from '../desserts/muffinChoco';
+import {TartePomme} from '../desserts/tartePomme';
 import {NavController} from 'ionic-angular'
 
 @Page({
@@ -14,26 +15,18 @@ import {NavController} from 'ionic-angular'
 
 <ion-content padding class="dessert">
 <ion-card class="card">
-  <img src="Menu/Desserts/MuffinChoco.jpg" height="175"/>
+  <img src="Menu/Desserts/MuffinChoco.jpg"/>
   <ion-card-content>
     <ion-card-title>
         Muffin au chocolat
       </ion-card-title>
     <p>
-      The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
-      The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
-      The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
-          The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
-          The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
-          The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
+        Préchauffez le four à 200°C (thermostat 6-7).
+        Faites fondre le beurre avec les 60 g de chocolat pour la pâte, ajoutez-y le lait puis le jaune d'oeuf et mélangez bien.
+        Dans un saladier, mélangez la farine, le sucre et la levure puis incorporez la préparation au chocolat.
+        Mélangez bien.
     </p>
-    <button (click)="turnToMenuDetail()">
+    <button (click)="turnToMuffinChoco()">
     Lire la suite
     <ion-icon name="book"></ion-icon>
 </button>
@@ -41,16 +34,17 @@ import {NavController} from 'ionic-angular'
 </ion-card>
 
 <ion-card class="card">
-  <img src="Menu/Desserts/TartePomme.jpg" height="175"/>
+  <img src="Menu/Desserts/TartePomme.jpg"/>
   <ion-card-content>
     <ion-card-title>
         Tarte au pomme
       </ion-card-title>
     <p>
-      The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
+        Éplucher et découper en morceaux 4 Golden. faire une compote : Les mettre dans une casserole avec un peu d'eau. (1 verre ou 2). Bien remuer. Quand les pommes commencent à ramollir, ajouter un sachet ou un sachet et demi de sucre vanillé. Ajouter un peu d'eau si nécessaire. 
+        Pendant que la compote cuit, éplucher et couper en quatre les deux dernières pommes, puis, couper les quartiers en fines lamelles (elles serviront à être posées sur la compote). 
+        Vous saurez si la compote est prête une fois que les pommes ne seront plus dures du tout. Ce n'est pas grave s'il reste quelques morceaux. 
     </p>
-    <button (click)="turnToMenuDetail()">
+    <button (click)="turnToTartePomme()">
     Lire la suite
     <ion-icon name="book"></ion-icon>
 </button>
@@ -62,7 +56,10 @@ export class Menu{
     constructor(nav: NavController){
         this.nav = nav
     }
-    turnToMenuDetail(){
-        this.nav.push(MenuDetail)
+    turnToMuffinChoco(){
+        this.nav.push(MuffinChoco)
+    }
+    turnToTartePomme(){
+        this.nav.push(TartePomme)
     }
 }
