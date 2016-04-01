@@ -15,6 +15,21 @@ module.exports = {
   },
   module: {
     loaders: [
+<<<<<<< HEAD
+      {
+        test: /\.js$/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015'],
+          plugins: [
+          'angular2-annotations',
+          'transform-decorators-legacy',
+          'transform-class-properties',
+          'transform-flow-strip-types']
+        },
+        include: path.resolve('app'),
+        exclude: /node_modules/
+=======
     {
       test: /\.js$/,
       loader: 'babel',
@@ -26,6 +41,7 @@ module.exports = {
           'transform-class-properties',
           'transform-flow-strip-types'
         ]
+>>>>>>> refs/remotes/origin/dev/quentin
       },
       include: path.resolve('app'),
       exclude: /node_modules/
