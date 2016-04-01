@@ -1,7 +1,4 @@
-/**
- * Created by Quentin on 31/03/2016.
- */
-import {Page} from 'angular2/core'
+import {Page} from 'ionic-angular'
 import {IONIC_DIRECTIVES} from 'ionic-angular';
 import {NavController} from 'ionic-angular'
 import {MenuDetail} from './menuDetailEntree'
@@ -10,6 +7,7 @@ import {MenuDetail} from './menuDetailEntree'
 <ion-navbar *navbar>
     <ion-title>Entrées</ion-title>
 </ion-navbar>
+<ion-content>
 <ion-card class="card">
   <img src="Menu/Entrees/plats/ravioli.png" height="175"/>
   <ion-card-content>
@@ -22,12 +20,11 @@ import {MenuDetail} from './menuDetailEntree'
       responsible for bringing the music to a mass audience.
     </p>
     <button primary>
-        <ion-icon name="book"></ion-icon>
         Lire la Suite
+        <ion-icon name="book"></ion-icon>
     </button>
   </ion-card-content>
 </ion-card>
-
 <ion-card class="card">
   <img src="Menu/Entrees/plats/tartelette.png" height="175"/>
   <ion-card-content>
@@ -39,12 +36,11 @@ import {MenuDetail} from './menuDetailEntree'
       responsible for bringing the music to a mass audience.
     </p>
     <button primary (click)="turnToDetail()">
-        <ion-icon name="book"></ion-icon>
         Lire la Suite
+        <ion-icon name="book"></ion-icon>
     </button>
   </ion-card-content>
 </ion-card>
-
 <ion-card class="card">
   <img src="Menu/Entrees/plats/soupe1.jpg" height="175"/>
   <ion-card-content>
@@ -56,12 +52,11 @@ import {MenuDetail} from './menuDetailEntree'
       responsible for bringing the music to a mass audience.
     </p>
     <button primary>
-        <ion-icon name="book"></ion-icon>
         Lire la Suite
+        <ion-icon name="book"></ion-icon>
     </button>
   </ion-card-content>
 </ion-card>
-
 <ion-card class="card">
   <img src="Menu/Entrees/plats/salade2.jpg" height="175"/>
   <ion-card-content>
@@ -73,18 +68,18 @@ import {MenuDetail} from './menuDetailEntree'
       responsible for bringing the music to a mass audience.
     </p>
     <button primary>
-        <ion-icon name="book"></ion-icon>
         Lire la Suite
+         <ion-icon name="book"></ion-icon>
     </button>
   </ion-card-content>
 </ion-card>
-
+</ion-content>
     `,
     directives : [IONIC_DIRECTIVES]
 })
 
-export class Menu{
-    
+export class MenuEntree{
+
     constructor(nav: NavController){
         this.nav = nav;
     }

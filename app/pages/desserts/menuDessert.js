@@ -3,12 +3,9 @@
  */
 
 import {Page} from 'ionic-angular';
-<<<<<<< HEAD:app/pages/desserts/menu.js
 import {MuffinChoco} from '../desserts/muffinChoco';
 import {TartePomme} from '../desserts/tartePomme';
-=======
-import {MenuDetailDessert} from './menuDetailDessert';
->>>>>>> fefd0187120e5592cf2930c1cb22441ae5540d4b:app/pages/desserts/menuDessert.js
+import {GateauChoco} from '../desserts/gateauChoco';
 import {NavController} from 'ionic-angular'
 
 @Page({
@@ -54,21 +51,41 @@ import {NavController} from 'ionic-angular'
 </button>
   </ion-card-content>
 </ion-card>
+
+<ion-card class="card">
+  <img src="Menu/Desserts/GateauChoco.jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+        Gateau au chocolat
+      </ion-card-title>
+    <p>
+        Éplucher et découper en morceaux 4 Golden. faire une compote : Les mettre dans une casserole avec un peu d'eau. (1 verre ou 2). Bien remuer. Quand les pommes commencent à ramollir, ajouter un sachet ou un sachet et demi de sucre vanillé. Ajouter un peu d'eau si nécessaire. 
+        Pendant que la compote cuit, éplucher et couper en quatre les deux dernières pommes, puis, couper les quartiers en fines lamelles (elles serviront à être posées sur la compote). 
+        Vous saurez si la compote est prête une fois que les pommes ne seront plus dures du tout. Ce n'est pas grave s'il reste quelques morceaux. 
+    </p>
+    <button (click)="turnToGateauChoco()">
+    Lire la suite
+    <ion-icon name="book"></ion-icon>
+</button>
+  </ion-card-content>
+</ion-card>
 </ion-content>`
 })
-export class MenuDessert{
-    constructor(nav: NavController){
+export class MenuDessert {
+    constructor(nav:NavController) {
         this.nav = nav
     }
-<<<<<<< HEAD:app/pages/desserts/menu.js
-    turnToMuffinChoco(){
+
+    turnToMuffinChoco() {
         this.nav.push(MuffinChoco)
     }
-    turnToTartePomme(){
+
+    turnToTartePomme() {
         this.nav.push(TartePomme)
-=======
-    turnToMenuDetail(){
-        this.nav.push(MenuDetailDessert)
->>>>>>> fefd0187120e5592cf2930c1cb22441ae5540d4b:app/pages/desserts/menuDessert.js
+
+    }
+    
+    turnToGateauChoco(){
+        this.nav.push(GateauChoco)
     }
 }
