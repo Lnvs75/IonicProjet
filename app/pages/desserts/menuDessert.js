@@ -3,7 +3,7 @@
  */
 
 import {Page} from 'ionic-angular';
-import {MenuDetail} from '../desserts/menuDetail';
+import {MenuDetail} from 'menuDetailDessert';
 import {NavController} from 'ionic-angular'
 
 @Page({

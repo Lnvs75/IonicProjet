@@ -1,13 +1,15 @@
 /**
  * Created by Quentin on 31/03/2016.
  */
-import {Component} from 'angular2/core'
+import {Page} from 'angular2/core'
 import {IONIC_DIRECTIVES} from 'ionic-angular';
 import {NavController} from 'ionic-angular'
 import {MenuDetail} from './menuDetail'
-@Component({
-    selector: 'menu',
+@Page({
     template: ` 
+<ion-navbar *navbar>
+    <ion-title>Entrées</ion-title>
+</ion-navbar>
 <ion-card class="card">
   <img src="Menu/Entrees/plats/ravioli.png" height="175"/>
   <ion-card-content>
