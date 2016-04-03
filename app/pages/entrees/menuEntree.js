@@ -14,7 +14,7 @@ import {Soupe} from './soupe'
 <ion-navbar *navbar>
     <ion-title>Entrées</ion-title>
 </ion-navbar>
-<ion-content>
+<ion-content padding class="dessert">
 <ion-card class="card">
   <img src="Menu/Entrees/plats/ravioli.png" height="175"/>
   <ion-card-content>

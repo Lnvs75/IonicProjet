@@ -67777,16 +67777,13 @@
 
 	var _ionicAngular = __webpack_require__(5);
 
-	var _menuDessert = __webpack_require__(403);
-
 	var _menuAria = __webpack_require__(402);
-
-	var _menuEntree = __webpack_require__(405);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var Showcase = exports.Showcase = (_dec = (0, _ionicAngular.Page)({
-	    template: '\n    <ion-navbar *navbar>\n      <ion-title>Home</ion-title>\n    </ion-navbar>\n    \n    <ion-content>\n      <p>Salut mon frère!</p>\n      <button (click)="turnToMenu()">Consulter le menu!</button>\n      <button (click)="turnToDessert()">Consulter les desserts!</button>\n      <button (click)="turnToEntree()">Consulter les entrées!</button>\n    </ion-content>\n    '
+	    template: '\n    <ion-navbar *navbar>\n        <ion-title>Chilling Tasty</ion-title>\n      </ion-navbar>\n\n      <ion-content padding class="home">\n        <app></app>\n      </ion-content>\n\n      <ion-toolbar position="bottom">\n        <button (click)="turnToMenu()" outline block>Découvrir Nos Recettes</button>\n      </ion-toolbar>\n    ',
+	    directives: [_ionicAngular.IONIC_DIRECTIVES]
 	}), _dec(_class = function () {
 	    function Showcase(nav) {
 	        _classCallCheck(this, Showcase);
@@ -67798,16 +67795,6 @@
 	        key: 'turnToMenu',
 	        value: function turnToMenu() {
 	            this.nav.push(_menuAria.MenuAria);
-	        }
-	    }, {
-	        key: 'turnToDessert',
-	        value: function turnToDessert() {
-	            this.nav.push(_menuDessert.MenuDessert);
-	        }
-	    }, {
-	        key: 'turnToEntree',
-	        value: function turnToEntree() {
-	            this.nav.push(_menuEntree.MenuEntree);
 	        }
 	    }]);
 
@@ -67826,20 +67813,215 @@
 	});
 	exports.MenuAria = undefined;
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _dec, _class;
+
+	var _ionicAngular = __webpack_require__(5);
+
+	var _menuEntree = __webpack_require__(403);
+
+	var _menuDessert = __webpack_require__(408);
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var MenuAria = exports.MenuAria = (_dec = (0, _ionicAngular.Page)({
+		template: '\n<ion-navbar *navbar>\n\t<ion-title>Menu</ion-title>\n</ion-navbar>\n\n<ion-content class="menuAria">\n\n\t<ion-card class="mycardparams margintop">\n\t\t<ion-card-title>\n\t\t\tEntrée\n\t\t</ion-card-title>\n\t\t<ion-card-content class="contentcolor">\n\t\t\tUne série d\'entrée pour gourmets ou fan de plats rapides et succulents\n\t\t\t<button (click)="turnToEntree()">Consulter les entrées!</button>\n\t\t</ion-card-content>\n\t</ion-card>\n\t\n\t<ion-card class="mycardparams repas">\n\t\t<ion-card-title>\n\t\t\tRepas\n\t\t</ion-card-title>\n\t\t<ion-card-content class="contentcolor">\n\t\t\tRepas simples, low cost, enfin tout ce qu\'il faut pour passer du bon temps sans faire attention\n\t\t</ion-card-content>\n\t</ion-card>\n\t\n\t<ion-card class="mycardparams desserts">\n\t\t<ion-card-title>\n\t\t\tDesserts\n\t\t</ion-card-title>\n\t\t<ion-card-content class="contentcolor">\n\t\t\tPersonne n\'a le temps pour faire attention au calories\n\t\t\t<button (click)="turnToDessert()">Consulter les desserts!</button>\n\t\t</ion-card-content>\n\t</ion-card>\n\t\n</ion-content>\n\t'
+	}), _dec(_class = function () {
+		function MenuAria(nav) {
+			_classCallCheck(this, MenuAria);
+
+			this.nav = nav;
+		}
+
+		_createClass(MenuAria, [{
+			key: 'turnToDessert',
+			value: function turnToDessert() {
+				this.nav.push(_menuDessert.MenuDessert);
+			}
+		}, {
+			key: 'turnToEntree',
+			value: function turnToEntree() {
+				this.nav.push(_menuEntree.MenuEntree);
+			}
+		}]);
+
+		return MenuAria;
+	}()) || _class);
+	Reflect.defineMetadata('design:paramtypes', [_ionicAngular.NavController], MenuAria);
+
+/***/ },
+/* 403 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.MenuEntree = undefined;
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _dec, _class; /**
+	                   * Created by Quentin on 31/03/2016.
+	                   */
+
+
+	var _ionicAngular = __webpack_require__(5);
+
+	var _ravioli = __webpack_require__(404);
+
+	var _salade = __webpack_require__(405);
+
+	var _tartelette = __webpack_require__(406);
+
+	var _soupe = __webpack_require__(407);
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var MenuEntree = exports.MenuEntree = (_dec = (0, _ionicAngular.Page)({
+	    template: ' \n<ion-navbar *navbar>\n    <ion-title>Entrées</ion-title>\n</ion-navbar>\n<ion-content padding class="dessert">\n<ion-card class="card">\n  <img src="Menu/Entrees/plats/ravioli.png" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Ravioles de foie gras,\n        potiron et écume de moules marinières\n      </ion-card-title>\n    <p>\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n    </p>\n    <button primary (click)="turnToRavioli()">\n        <ion-icon name="book"></ion-icon>\n        Lire la Suite\n    </button>\n  </ion-card-content>\n</ion-card>\n\n<ion-card class="card">\n  <img src="Menu/Entrees/plats/tartelette.png" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Tartelettes au chèvre et confit d\'oignons\n      </ion-card-title>\n    <p>\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n    </p>\n    <button primary (click)="turnToTartelette()">\n        <ion-icon name="book"></ion-icon>\n        Lire la Suite\n    </button>\n  </ion-card-content>\n</ion-card>\n\n<ion-card class="card">\n  <img src="Menu/Entrees/plats/soupe1.jpg" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Soupe de pois cassés\n      </ion-card-title>\n    <p>\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n    </p>\n    <button primary (click)="turnToSoupe()">\n        <ion-icon name="book"></ion-icon>\n        Lire la Suite\n    </button>\n  </ion-card-content>\n</ion-card>\n\n<ion-card class="card">\n  <img src="Menu/Entrees/plats/salade2.jpg" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Salade d’endives aux oranges et aux noix\n      </ion-card-title>\n    <p>\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n    </p>\n    <button primary (click)="turnToSalade()">\n        <ion-icon name="book"></ion-icon>\n        Lire la Suite\n    </button>\n  </ion-card-content>\n</ion-card>\n</ion-content>\n    ',
+	    directives: [_ionicAngular.IONIC_DIRECTIVES]
+	}), _dec(_class = function () {
+	    function MenuEntree(nav) {
+	        _classCallCheck(this, MenuEntree);
+
+	        this.nav = nav;
+	    }
+
+	    _createClass(MenuEntree, [{
+	        key: 'turnToRavioli',
+	        value: function turnToRavioli() {
+	            this.nav.push(_ravioli.Ravioli);
+	        }
+	    }, {
+	        key: 'turnToTartelette',
+	        value: function turnToTartelette() {
+	            this.nav.push(_tartelette.Tartelette);
+	        }
+	    }, {
+	        key: 'turnToSoupe',
+	        value: function turnToSoupe() {
+	            this.nav.push(_soupe.Soupe);
+	        }
+	    }, {
+	        key: 'turnToSalade',
+	        value: function turnToSalade() {
+	            this.nav.push(_salade.Salade);
+	        }
+	    }]);
+
+	    return MenuEntree;
+	}()) || _class);
+	Reflect.defineMetadata('design:paramtypes', [_ionicAngular.NavController], MenuEntree);
+
+/***/ },
+/* 404 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.Ravioli = undefined;
+
+	var _dec, _class; /**
+	                   * Created by Quentin on 01/04/2016.
+	                   */
+
 
 	var _ionicAngular = __webpack_require__(5);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var MenuAria = exports.MenuAria = (_dec = (0, _ionicAngular.Page)({
-		template: '\n<ion-navbar *navbar>\n\t<ion-title>Menu</ion-title>\n</ion-navbar>\n<ion-content>\n\t<ion-card class="mycardparams margintop">\n\t\t<ion-card-header>\n\t\t\tEntrée\n\t\t</ion-card-header>\n\t\t<ion-card-content class="contentcolor">\n\t\t\tUne série d\'entrée pour gourmets ou fan de plats rapides et succulents\n\t\t</ion-card-content>\n\t</ion-card>\n\t<ion-card class="mycardparams repas">\n\t\t<ion-card-header>\n\t\t\tRepas\n\t\t</ion-card-header>\n\t\t<ion-card-content class="contentcolor">\n\t\t\tRepas simples, low cost, enfin tout ce qu\'il faut pour passer du bon temps sans faire attention\n\t\t</ion-card-content>\n\t</ion-card>\n\t<ion-card class="mycardparams desserts">\n\t\t<ion-card-header>\n\t\t\tDesserts\n\t\t</ion-card-header>\n\t\t<ion-card-content class="contentcolor">\n\t\t\tPersonne n\'a le temps pour faire attention au calories\n\t\t</ion-card-content>\n\t</ion-card>\n</ion-content>\n\t'
-	}), _dec(_class = function MenuAria() {
-		_classCallCheck(this, MenuAria);
+	var Ravioli = exports.Ravioli = (_dec = (0, _ionicAngular.Page)({
+	    template: '\n<ion-navbar *navbar>\n    <ion-title>Entrées</ion-title>        \n</ion-navbar>\n<ion-content class="entree">\n<ion-card class="card">\n  <img src="Menu/Entrees/plats/ravioli.png" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Ravioles de foie gras,\n        potiron et écume de moules marinières\n      </ion-card-title>\n    <ul>\n        <li>Préparation de la purée de potiron : épluchez et émincez l\'oignon.</li>\n        <li>Faites-le revenir dans un faitout avec un peu d\'huile.</li>\n        <li>Pendant ce temps, épluchez et coupez en cubes le potiron.</li>\n        <li>Une fois les oignons colorés, ajoutez le potiron et faites-le revenir quelques minutes.</li>\n        <li>Ajoutez la branche de céleri coupée en tronçons.</li>\n        <li>Ajoutez l\'eau à couvert, \n            le sel et le poivre puis laissez cuire jusqu\'à ce que le potiron soit bien tendre.\n        </li>\n        <li>Égouttez les légumes et réduisez-les en purée. \n            Rectifiez l\'assaisonnement.\n        </li>\n        <li>Préparation des ravioles de foie gras : \n            coupez le foie gras en cubes de 1cm x 1cm et \n            déposez les cubes au centre des feuilles de ravioles.\n        </li>\n        <li>Badigeonnez le bord des feuilles à ravioles avec du \n            jaune d’œuf et recouvrez d’une deuxième feuille.\n        </li>\n        <li>Pressez les bords pour bien souder les deux feuilles</li>\n        <li>Découpez en rond à l’aide d’un emporte-pièce (cannelé pour moi). Réservez.</li>\n        <li>Préparation de l\'écume de moule : nettoyez les moules.</li>\n        <li>Dans un faitout, faites dorer l’échalote émincée dans un peu d\'huile.</li>\n        <li>Ajoutez les moules et le vin blanc.</li>\n        <li>Laissez les moules s\'ouvrir et ajoutez la crème liquide, le sel et le poivre.</li>\n        <li>Poursuivez la cuisson quelques minutes.</li>\n        <li>Filtrez le jus des moules et réservez.</li>\n        <li>Pour le dressage : faites bouillir le bouillon de volaille dans une casserole.</li>\n        <li>Baissez le feu et plongez les ravioles dans l\'eau frémissante.</li>\n        <li>Laissez cuire 3 minutes. Réservez.</li>\n        <li>Émulsionnez le jus de moules marinières à l\'aide d\'un mixeur plongeant.</li>\n        <li>Déposez de la purée de potiron chaude dans le fond de l’assiette, \n            les trois ravioles et enfin un peu d\'écume de moule. \n            Servez bien chaud. L\'abus d\'alcool est dangereux pour la santé.\n        </li>\n    </ul>\n  </ion-card-content>\n</ion-card>\n</ion-content>\n    '
+	}), _dec(_class = function Ravioli() {
+	    _classCallCheck(this, Ravioli);
 	}) || _class);
 
 /***/ },
-/* 403 */
+/* 405 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.Salade = undefined;
+
+	var _dec, _class; /**
+	                   * Created by Quentin on 01/04/2016.
+	                   */
+
+
+	var _ionicAngular = __webpack_require__(5);
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Salade = exports.Salade = (_dec = (0, _ionicAngular.Page)({
+	    template: '\n<ion-navbar *navbar>\n    <ion-title>Entrées</ion-title>        \n</ion-navbar>\n<ion-content class="entree">\n<ion-card class="card">\n  <img src="Menu/Entrees/plats/salade2.jpg" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Salade d’endives aux oranges et aux noix\n      </ion-card-title>\n    <ul>\n        <li>Lavez les endives et coupez-les en demi-rondelles</li>\n        <li>Mettez-les dans le saladier. 3 Ajoutez la salade préalablement lavée.</li>\n        <li>Épluchez l’orange et soulevez les suprêmes (la chair, sans la peau).</li>\n        <li>Mettez le tout dans le saladier puis ajoutez le gouda coupé en petits cubes et les noix.</li>\n        <li>Assaisonnez avec l’huile d’olive et le velours balsamique.</li>\n        <li>Salez, poivrez puis servez !</li>\n    </ul>\n  </ion-card-content>\n</ion-card>\n</ion-content>\n    '
+	}), _dec(_class = function Salade() {
+	    _classCallCheck(this, Salade);
+	}) || _class);
+
+/***/ },
+/* 406 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.Tartelette = undefined;
+
+	var _dec, _class; /**
+	                   * Created by Quentin on 01/04/2016.
+	                   */
+
+
+	var _ionicAngular = __webpack_require__(5);
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Tartelette = exports.Tartelette = (_dec = (0, _ionicAngular.Page)({
+	    template: '\n<ion-navbar *navbar>\n    <ion-title>Entrées</ion-title>        \n</ion-navbar>\n<ion-content padding class="entree">\n\n<ion-card class="card">\n  <img src="Menu/Entrees/plats/tartelette.png" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Tartelettes au chèvre et confit d\'oignons\n      </ion-card-title>\n    <ul>\n        <li>Préchauffez le four à 210°C.</li>\n        <li>Découpez la pâte feuilletée en carrés.</li>\n        <li>Déposez un petit tas de confit d’oignons au centre de chaque carré \n            et déposez par-dessus une tranche de bûche de chèvre.\n        </li>\n        <li>Saupoudrez de sésames dorés et poivrez.</li>\n        <li>Enfournez et laissez cuire 20 minutes.</li>\n        <li>Pendant ce temps, lavez la mâche et préparez la vinaigrette avec une cuillère à soupe de vinaigre de\n            framboises et deux cuillères à soupe d’huile d’olive. \n            Salez et poivrez. Servez avec une petite salade de mâche assaisonnée et dégustez !\n        </li>\n    </ul>\n  </ion-card-content>\n</ion-card>\n</ion-content>\n    '
+	}), _dec(_class = function Tartelette() {
+	    _classCallCheck(this, Tartelette);
+	}) || _class);
+
+/***/ },
+/* 407 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.Soupe = undefined;
+
+	var _dec, _class; /**
+	                   * Created by Quentin on 01/04/2016.
+	                   */
+
+
+	var _ionicAngular = __webpack_require__(5);
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Soupe = exports.Soupe = (_dec = (0, _ionicAngular.Page)({
+	    template: '\n<ion-navbar *navbar>\n    <ion-title>Entrées</ion-title>        \n</ion-navbar>\n\n<ion-content class="entree">\n\n<ion-card class="card">\n  <img src="Menu/Entrees/plats/soupe1.jpg" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Soupe de pois cassés\n      </ion-card-title>\n    <ul>\n        <li>Éplucher et découper les légumes en dés.</li>\n        <li>Les faire revenir 5 minutes environ avec l\'huile de pépin de raisin.</li>\n        <li>Ajouter les pois cassés, l\'eau, le bouquet garni, le sel et un peu de poivre de moulin.</li>\n        <li>Cuire à feu moyen 2 heures environ.</li>\n        <li>Mixer la soupe à l\'aide d\'un robot ou \n            d\'un blender puis servir avec des dés de pain grillé ou rôti dans un peu de beurre.\n        </li>\n    </ul>\n  </ion-card-content>\n</ion-card>\n\n</ion-content>\n    '
+	}), _dec(_class = function Soupe() {
+	    _classCallCheck(this, Soupe);
+	}) || _class);
+
+/***/ },
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67857,12 +68039,14 @@
 
 	var _ionicAngular = __webpack_require__(5);
 
-	var _menuDetailDessert = __webpack_require__(404);
+	var _muffinChoco = __webpack_require__(409);
+
+	var _tartePomme = __webpack_require__(410);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var MenuDessert = exports.MenuDessert = (_dec = (0, _ionicAngular.Page)({
-	    template: ' \n <ion-navbar *navbar>\n    <ion-title>Desserts</ion-title>\n</ion-navbar>\n\n<ion-content padding class="dessert">\n<ion-card class="card">\n  <img src="Menu/Desserts/MuffinChoco.jpg" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Muffin au chocolat\n      </ion-card-title>\n    <p>\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n          The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n          The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n          The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n    </p>\n    <button (click)="turnToMenuDetail()">\n    Lire la suite\n    <ion-icon name="book"></ion-icon>\n</button>\n  </ion-card-content>\n</ion-card>\n\n<ion-card class="card">\n  <img src="Menu/Desserts/TartePomme.jpg" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Tarte au pomme\n      </ion-card-title>\n    <p>\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n    </p>\n    <button (click)="turnToMenuDetail()">\n    Lire la suite\n    <ion-icon name="book"></ion-icon>\n</button>\n  </ion-card-content>\n</ion-card>\n</ion-content>'
+	    template: ' \n <ion-navbar *navbar>\n    <ion-title>Desserts</ion-title>\n</ion-navbar>\n\n<ion-content padding class="dessert">\n<ion-card class="card">\n  <img src="Menu/Desserts/MuffinChoco.jpg"/>\n  <ion-card-content>\n    <ion-card-title>\n        Muffin au chocolat\n      </ion-card-title>\n    <p>\n        Préchauffez le four à 200°C (thermostat 6-7).\n        Faites fondre le beurre avec les 60 g de chocolat pour la pâte, ajoutez-y le lait puis le jaune d\'oeuf et mélangez bien.\n        Dans un saladier, mélangez la farine, le sucre et la levure puis incorporez la préparation au chocolat.\n        Mélangez bien.\n    </p>\n    <button (click)="turnToMuffinChoco()">\n    Lire la suite\n    <ion-icon name="book"></ion-icon>\n</button>\n  </ion-card-content>\n</ion-card>\n\n<ion-card class="card">\n  <img src="Menu/Desserts/TartePomme.jpg"/>\n  <ion-card-content>\n    <ion-card-title>\n        Tarte au pomme\n      </ion-card-title>\n    <p>\n        Éplucher et découper en morceaux 4 Golden. faire une compote : Les mettre dans une casserole avec un peu d\'eau. (1 verre ou 2). Bien remuer. Quand les pommes commencent à ramollir, ajouter un sachet ou un sachet et demi de sucre vanillé. Ajouter un peu d\'eau si nécessaire. \n        Pendant que la compote cuit, éplucher et couper en quatre les deux dernières pommes, puis, couper les quartiers en fines lamelles (elles serviront à être posées sur la compote). \n        Vous saurez si la compote est prête une fois que les pommes ne seront plus dures du tout. Ce n\'est pas grave s\'il reste quelques morceaux. \n    </p>\n    <button (click)="turnToTartePomme()">\n    Lire la suite\n    <ion-icon name="book"></ion-icon>\n</button>\n  </ion-card-content>\n</ion-card>\n</ion-content>'
 	}), _dec(_class = function () {
 	    function MenuDessert(nav) {
 	        _classCallCheck(this, MenuDessert);
@@ -67871,9 +68055,14 @@
 	    }
 
 	    _createClass(MenuDessert, [{
-	        key: 'turnToMenuDetail',
-	        value: function turnToMenuDetail() {
-	            this.nav.push(_menuDetailDessert.MenuDetailDessert);
+	        key: 'turnToMuffinChoco',
+	        value: function turnToMuffinChoco() {
+	            this.nav.push(_muffinChoco.MuffinChoco);
+	        }
+	    }, {
+	        key: 'turnToTartePomme',
+	        value: function turnToTartePomme() {
+	            this.nav.push(_tartePomme.TartePomme);
 	        }
 	    }]);
 
@@ -67882,7 +68071,7 @@
 	Reflect.defineMetadata('design:paramtypes', [_ionicAngular.NavController], MenuDessert);
 
 /***/ },
-/* 404 */
+/* 409 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67890,11 +68079,9 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.MenuDetailDessert = undefined;
+	exports.MuffinChoco = undefined;
 
-	var _dec, _class; /**
-	                   * Created by yaren on 31/03/2016.
-	                   */
+	var _dec, _class;
 	/**
 	 * Created by yaren on 31/03/2016.
 	 */
@@ -67903,59 +68090,14 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var MenuDetailDessert = exports.MenuDetailDessert = (_dec = (0, _ionicAngular.Page)({
-	    template: ' \n  <ion-navbar *navbar>\n    <ion-title>Desserts</ion-title>\n</ion-navbar>\n\n<ion-content padding class="dessert">\n<ion-card class="card1">\n  <img src="Menu/Desserts/MuffinChoco.jpg" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Muffin au chocolat\n      </ion-card-title>\n    <p>\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n          The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n          The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n          The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n    </p>\n\n  </ion-card-content>\n</ion-card>\n\n\n</ion-content>\n    '
-	}), _dec(_class = function MenuDetailDessert() {
-	    _classCallCheck(this, MenuDetailDessert);
+	var MuffinChoco = exports.MuffinChoco = (_dec = (0, _ionicAngular.Page)({
+	    template: ' \n  <ion-navbar *navbar>\n    <ion-title>Desserts</ion-title>\n</ion-navbar>\n\n<ion-content padding class="dessert">\n<ion-card class="card1">\n  <img src="Menu/Desserts/MuffinChoco.jpg"/>\n  <ion-card-content>\n    <ion-card-title>\n        <h1>Muffin au chocolat</h1>\n      </ion-card-title>\n      \n    <h2>Ingrédients (pour 6 pièces) :</h2>\n    <ul>\n        <li>120 g de farine avec levure incorporée (ou ajoutez 1/2 sachet de levure chimique)</li>\n        <li>60 g de sucre en poudre</li>\n        <li>4 cuillères à soupe de lait écremé</li>\n        <li>1 oeuf entier + un blanc d\'oeuf</li>\n        <li>50 g de beurre</li>\n        <li>60 g de chocolat pour la pâte</li>\n        <li>100 g de chocolat pour les pépites\n    </ul>\n    \n    <h2>Préparation de la recette:</h2><br/>\n    <h4>\n        Préchauffez le four à 200°C (thermostat 6-7).\n        Faites fondre le beurre avec les 60 g de chocolat pour la pâte, ajoutez-y le lait puis le jaune d\'oeuf et mélangez bien.\n        Dans un saladier, mélangez la farine, le sucre et la levure puis incorporez la préparation au chocolat.\n        Mélangez bien.\n        Vous obtiendrez une pâte assez solide.\n        Battez les blancs en neige avec une pincée de sel et incorporez-les délicatement à la pâte.\n        Coupez les 100 g de chocolat en petits morceaux et mélangez-les à la pâte.\n        Beurrez les moules et remplissez-les de pâte à la moitié.\n        Faites cuire 10 à 15 min à 200°C.\n        Laissez refroidir et démoulez.\n    </h4>\n\n  </ion-card-content>\n</ion-card>\n\n\n</ion-content>\n    '
+	}), _dec(_class = function MuffinChoco() {
+	    _classCallCheck(this, MuffinChoco);
 	}) || _class);
 
 /***/ },
-/* 405 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.MenuEntree = undefined;
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _dec, _class; /**
-	                   * Created by Quentin on 31/03/2016.
-	                   */
-
-
-	var _ionicAngular = __webpack_require__(5);
-
-	var _menuDetailEntree = __webpack_require__(406);
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var MenuEntree = exports.MenuEntree = (_dec = (0, _ionicAngular.Page)({
-	  template: ' \n<ion-navbar *navbar>\n    <ion-title>Entrées</ion-title>\n</ion-navbar>\n<ion-content>\n<ion-card class="card">\n  <img src="Menu/Entrees/plats/ravioli.png" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Ravioles de foie gras,\n        potiron et écume de moules marinières\n      </ion-card-title>\n    <p>\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n    </p>\n    <button primary>\n        <ion-icon name="book"></ion-icon>\n        Lire la Suite\n    </button>\n  </ion-card-content>\n</ion-card>\n\n<ion-card class="card">\n  <img src="Menu/Entrees/plats/tartelette.png" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Tartelettes au chèvre et confit d\'oignons\n      </ion-card-title>\n    <p>\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n    </p>\n    <button primary (click)="turnToDetail()">\n        <ion-icon name="book"></ion-icon>\n        Lire la Suite\n    </button>\n  </ion-card-content>\n</ion-card>\n\n<ion-card class="card">\n  <img src="Menu/Entrees/plats/soupe1.jpg" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Soupe de pois cassés\n      </ion-card-title>\n    <p>\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n    </p>\n    <button primary>\n        <ion-icon name="book"></ion-icon>\n        Lire la Suite\n    </button>\n  </ion-card-content>\n</ion-card>\n\n<ion-card class="card">\n  <img src="Menu/Entrees/plats/salade2.jpg" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Salade d’endives aux oranges et aux noix\n      </ion-card-title>\n    <p>\n      The most popular industrial group ever, and largely\n      responsible for bringing the music to a mass audience.\n    </p>\n    <button primary>\n        <ion-icon name="book"></ion-icon>\n        Lire la Suite\n    </button>\n  </ion-card-content>\n</ion-card>\n</ion-content>\n    ',
-	  directives: [_ionicAngular.IONIC_DIRECTIVES]
-	}), _dec(_class = function () {
-	  function MenuEntree(nav) {
-	    _classCallCheck(this, MenuEntree);
-
-	    this.nav = nav;
-	  }
-
-	  _createClass(MenuEntree, [{
-	    key: 'turnToDetail',
-	    value: function turnToDetail() {
-	      this.nav.push(_menuDetailEntree.MenuDetail);
-	    }
-	  }]);
-
-	  return MenuEntree;
-	}()) || _class);
-	Reflect.defineMetadata('design:paramtypes', [_ionicAngular.NavController], MenuEntree);
-
-/***/ },
-/* 406 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67963,21 +68105,20 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.MenuDetail = undefined;
+	exports.TartePomme = undefined;
 
 	var _dec, _class; /**
-	                   * Created by Quentin on 31/03/2016.
+	                   * Created by yaren on 01/04/2016.
 	                   */
-
 
 	var _ionicAngular = __webpack_require__(5);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var MenuDetail = exports.MenuDetail = (_dec = (0, _ionicAngular.Page)({
-	    template: '\n<ion-navbar *navbar>\n    <ion-title>Entrées</ion-title>        \n</ion-navbar>\n<ion-content>\n<ion-card class="card">\n  <img src="Menu/Entrees/plats/ravioli.png" height="175"/>\n  <ion-card-content>\n    <ion-card-title>\n        Ravioles de foie gras,\n        potiron et écume de moules marinières\n      </ion-card-title>\n    <ul>\n        <li>Préparation de la purée de potiron : épluchez et émincez l\'oignon.</li>\n        <li>Faites-le revenir dans un faitout avec un peu d\'huile.</li>\n        <li>Pendant ce temps, épluchez et coupez en cubes le potiron.</li>\n    </ul>\n    <button primary>\n        <ion-icon name="book"></ion-icon>\n        Lire la Suite\n    </button>\n  </ion-card-content>\n</ion-card>\n</ion-content>\n    '
-	}), _dec(_class = function MenuDetail() {
-	    _classCallCheck(this, MenuDetail);
+	var TartePomme = exports.TartePomme = (_dec = (0, _ionicAngular.Page)({
+	    template: ' \n  <ion-navbar *navbar>\n    <ion-title>Desserts</ion-title>\n</ion-navbar>\n\n<ion-content padding class="dessert">\n<ion-card class="card1">\n  <img src="Menu/Desserts/TartePomme.jpg"/>\n  <ion-card-content>\n    <ion-card-title>\n        Tarte aux pommes\n      </ion-card-title>\n       <h2>Ingrédients :</h2>\n            <ul>\n                <li>1 pâte brisée</li>\n                <li> 6 pommes Golden</li>\n                <li>1 sachet de sucre vanillé</li>\n                <li>30 g de beurre</li>\n            </ul>\n    <h2>Préparation de la recette:</h2><br/>\n    <h4>\n        Éplucher et découper en morceaux 4 Golden. faire une compote : Les mettre dans une casserole avec un peu d\'eau. (1 verre ou 2). Bien remuer. Quand les pommes commencent à ramollir, ajouter un sachet ou un sachet et demi de sucre vanillé. Ajouter un peu d\'eau si nécessaire. \n        Pendant que la compote cuit, éplucher et couper en quatre les deux dernières pommes, puis, couper les quartiers en fines lamelles (elles serviront à être posées sur la compote). \n        Vous saurez si la compote est prête une fois que les pommes ne seront plus dures du tout. Ce n\'est pas grave s\'il reste quelques morceaux. \n        Laisser un peu refroidir la compote et étaler la pâte brisée dans un moule et la piquer avec une fourchette. \n        Verser la compote sur la pâte et placer les lamelles de pommes en formant une spirale ou plusieurs cercles, au choix ! Disposer des lamelles de beurre dessus.\n        Mettre au four (Th 7) préalablement préchauffé, et laisser cuire pendant 30 min max. Surveiller la cuisson. Vous pouvez rajouter un peu de sucre vanillé sur la tarte pendant que çà cuit pour caraméliser un peu.\n    </h4>\n\n  </ion-card-content>\n</ion-card>\n\n\n</ion-content>\n    '
+	}), _dec(_class = function TartePomme() {
+	    _classCallCheck(this, TartePomme);
 	}) || _class);
 
 /***/ }

@@ -7610,11 +7610,14 @@ body {
 * {
   padding: 0 auto; }
 
+.menuAria {
+  background: url("Home/menuAria3.jpg") no-repeat;
+  background-size: 612px; }
+
 .mybackground {
   background-color: #9e9e9e; }
 
 .margintop {
-  margin-top: 15%;
   background-image: url("http://www.quiveutdufromage.com/data/recette/entree-fraicheur-au-tartare-414x414.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -7622,7 +7625,7 @@ body {
 
 .mycardparams {
   height: 150px;
-  margin-bottom: 17%; }
+  margin-bottom: 50px; }
 
 .repas {
   background-image: url("http://www.coupdepouce.com/img/photos/biz/cdp/saute-porc-poivrons410.jpg");
@@ -7640,8 +7643,15 @@ body {
   background-color: #e0e0e0;
   opacity: 0.8; }
 
+.dessert {
+  background: url("Home/menuAria3.jpg") no-repeat;
+  background-size: 612px; }
+
 .card {
   width: 450px; }
+
+.card img {
+  height: 260px; }
 
 .card p {
   white-space: nowrap;
@@ -7651,3 +7661,36 @@ body {
 
 .card1 {
   width: 600px; }
+
+.card1 img {
+  width: 600px;
+  height: 350px; }
+
+h2 {
+  color: #440044;
+  font-weight: bold; }
+
+.entree {
+  background: url("Home/menuAria3.jpg") no-repeat;
+  background-size: 612px; }
+
+.card {
+  width: 350px;
+  margin-right: 900px; }
+
+.card img {
+  height: 260px; }
+
+.card p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 200px; }
+
+.home {
+  background: url("Home/HomePage.jpg") no-repeat center;
+  background-size: cover; }
+
+.button {
+  margin-left: auto;
+  margin-right: auto; }

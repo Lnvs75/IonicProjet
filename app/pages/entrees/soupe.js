@@ -8,7 +8,9 @@ import {Page} from 'ionic-angular';
 <ion-navbar *navbar>
     <ion-title>Entrées</ion-title>        
 </ion-navbar>
-<ion-content>
+
+<ion-content class="entree">
+
 <ion-card class="card">
   <img src="Menu/Entrees/plats/soupe1.jpg" height="175"/>
   <ion-card-content>
@@ -26,6 +28,7 @@ import {Page} from 'ionic-angular';
     </ul>
   </ion-card-content>
 </ion-card>
+
 </ion-content>
     `
 })

@@ -1,12 +1,16 @@
 *{padding: 0 auto;}
 
+.menuAria{
+  background: url('Home/menuAria3.jpg') no-repeat;
+  background-size: 612px;
+}
 .mybackground{
 	background-color: #9e9e9e ;
 }
 
 
 .margintop{
-	margin-top: 15%;
+
 	background-image: url('http://www.quiveutdufromage.com/data/recette/entree-fraicheur-au-tartare-414x414.png');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -16,7 +20,7 @@
 
 .mycardparams{
 	height: 150px;
-	margin-bottom: 17%;
+	margin-bottom: 50px;
 
 }
 
@@ -36,5 +40,5 @@
 
 .contentcolor{
 	background-color: #e0e0e0 ;
-	opacity: 0.8;	
+	opacity: 0.8;
 }
