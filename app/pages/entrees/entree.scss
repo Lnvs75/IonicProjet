@@ -1,8 +1,20 @@
 .entree{
-
+  background: url('Home/menuAria3.jpg') no-repeat;
+  background-size: 612px;
+}
+.card {
+  width: 350px;
+  margin-right: 900px;
 }
 
-.card{
-  height: 200px;
-  width: 100px;
+.card img{
+  height: 260px;
+}
+
+.card p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 200px;
+
 }
