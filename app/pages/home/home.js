@@ -9,7 +9,7 @@ import{App} from './app'
 })
 export class Home {
   
-  /*goToPage2(){
+  goToPage2(){
     this.nav.push(Page2);
-  }*/
+  }
 }
