@@ -5,7 +5,7 @@ import {HTTP_PROVIDERS} from 'angular2/http'
 import * as rx from 'rxjs'
 import {Page1} from './pages/page1/page1'
 import {Home} from './pages/home/home'
-
+import {Showcase} from './showcase'
 @App({
   template: '<ion-nav [root]="rootPage"></ion-nav>',
   viewProviders: [HTTP_PROVIDERS],
@@ -17,7 +17,7 @@ export class MyApp {
   }
 
   constructor(platform) {
-    this.rootPage = Home;
+    this.rootPage = Showcase;
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

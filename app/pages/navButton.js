@@ -4,6 +4,7 @@
 import {Component} from 'angular2/core'
 import {Page2} from '../page2/page2'
 import {Entree} from '../entrees/entree'
+import {Repas} from '../repas/repas'
 import {NavController} from 'ionic-angular'
 import {Dessert} from '../desserts/dessert'
 
@@ -12,6 +13,7 @@ import {Dessert} from '../desserts/dessert'
     template: `
         <button (click)="turnToPage2()"> Aller à la page 2</button>
         <button (click)="turnToEntree()"> Allez visiter les entrées!</button>
+        <button (click)="turnToRepas()">Consulter les repas!</button>
         <button (click)="turnToDessert()"> Découvrez les desserts !</button>
         `
 })
@@ -31,6 +33,9 @@ export class NavButton{
 
     turnToPage2(){
         this.nav.push(Page2)
+    }
+    turnToRepas(){
+        this.nav.push(Repas)
     }
 
 
