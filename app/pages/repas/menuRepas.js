@@ -4,6 +4,7 @@
 
 import {Page} from 'ionic-angular';
 import {Lasagne} from '../repas/lasagne';
+import {Cannelloni} from '../repas/cannelloni';
 import {NavController} from 'ionic-angular'
 
 @Page({
@@ -12,21 +13,38 @@ import {NavController} from 'ionic-angular'
     <ion-title>Desserts</ion-title>
 </ion-navbar>
 
-<ion-content padding class="dessert">
+<ion-content padding class="repas">
 
 <ion-card class="card">
-  <img src="Menu/Repas/Lasagne.jpg"/>
+  <img src="Menu/Repas/lasagne.jpg"/>
   <ion-card-content>
     <ion-card-title>
         Lasagne à la bolognaise
       </ion-card-title>
     <p>
-        Préchauffez le four à 200°C (thermostat 6-7).
-        Faites fondre le beurre avec les 60 g de chocolat pour la pâte, ajoutez-y le lait puis le jaune d'oeuf et mélangez bien.
-        Dans un saladier, mélangez la farine, le sucre et la levure puis incorporez la préparation au chocolat.
-        Mélangez bien.
+        Emincer les oignons. Ecraser les gousses d'ail. Hacher finement carotte et céleri. 
+        Faire revenir gousses d'ail et oignons dans un peu d'huile d'olive.
+        Ajouter la carotte et la branche de céleri hachée puis la viande et faire revenir le tout. 
     </p>
     <button (click)="turnToLasagne()">
+        Lire la suite
+    <ion-icon name="book"></ion-icon>
+    </button>
+  </ion-card-content>
+</ion-card>
+
+<ion-card class="card">
+  <img src="Menu/Repas/cannelloni.jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+        Cannelloni à la bolognaise pour 4 pers
+      </ion-card-title>
+    <p>
+         Hachez menu l’oignon et les gousses d’ail. Faîtes-les revenir avec la viande dans l’huile chaude. 
+         Écrasez bien la viande à la fourchette. 
+         Hors du feu, salez et poivrez, aromatisez avec la moitié de l’origan et de la sauge, incorporez le concentré de tomates. 
+    </p>
+    <button (click)="turnToCannelloni()">
         Lire la suite
     <ion-icon name="book"></ion-icon>
     </button>
@@ -42,5 +60,8 @@ export class MenuRepas{
     }
     turnToLasagne(){
         this.nav.push(Lasagne)
+    }
+    turnToCannelloni(){
+        this.nav.push(Cannelloni)
     }
 }
