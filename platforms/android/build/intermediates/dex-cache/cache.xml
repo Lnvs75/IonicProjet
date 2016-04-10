@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Quentin\github\Mobilite\IonicProjet\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="22de0e42b844ac488a1d25a7a66a503362850165">
+        <dex dex="C:\Users\Quentin\github\Mobilite\IonicProjet\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_82adcaa465b92cba20f2efb81343677dd4da7a0a.jar" />
+    </item>
+
+</items>
