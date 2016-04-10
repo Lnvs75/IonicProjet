@@ -8,17 +8,13 @@ import {Page} from 'ionic-angular';
 <ion-navbar *navbar>
     <ion-title>Repas</ion-title>        
 </ion-navbar>
-
 <ion-content class="dessert">
-
 <ion-card class="card">
   <img src="Menu/Repas/cannelloni.jpg" height="175"/>
-
   <ion-card-content>
     <ion-card-title>
         Cannelloni à la bolognaise pour 4 pers
       </ion-card-title>
-
        <h2>Ingrédients :</h2>
             <ul>
                 <li>250 g de cannelloni</li>
@@ -44,10 +40,8 @@ import {Page} from 'ionic-angular';
                     Mélangez la moitié du parmesan avec la crème et amalgamez avec le hachis de viande. Farcissez les cannelloni avec cette préparation, disposez-les dans un plat beurré, nappez-les de sauce tomate, parsemez-les de noisettes de beurre et saupoudrez-les avec le reste de parmesan. Faîtes cuire dans le four pendant 45 min.
                     Servez avec une salade verte.
     </h4>
-
   </ion-card-content>
 </ion-card>
-
 </ion-content>
     `
 })

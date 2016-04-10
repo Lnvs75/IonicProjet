@@ -1,3 +1,11 @@
+/**
+ * Created by yaren on 08/04/2016.
+ */
+
+/**
+ * Created by loic on 05/04/2016.
+ */
+
 import {Page} from 'ionic-angular';
 import {Lasagne} from '../repas/lasagne';
 import {Cannelloni} from '../repas/cannelloni';

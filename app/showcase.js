@@ -2,8 +2,8 @@
  * Created by Quentin on 01/04/2016.
  */
 import {Page, NavController} from 'ionic-angular';
-import {MenuAria} from './pages/page2/menuAria';
 import {IONIC_DIRECTIVES} from 'ionic-angular';
+import {MenuAria} from './pages/page2/menuAria';
 
 @Page({
     template: `
@@ -11,7 +11,7 @@ import {IONIC_DIRECTIVES} from 'ionic-angular';
         <ion-title>Chilling Tasty</ion-title>
       </ion-navbar>
 
-      <ion-content padding class="home">
+      <ion-content padding class="homes">
         <app></app>
       </ion-content>
 
@@ -20,6 +20,7 @@ import {IONIC_DIRECTIVES} from 'ionic-angular';
       </ion-toolbar>
     `,
     directives: [IONIC_DIRECTIVES]
+
 })
 
 export class Showcase{

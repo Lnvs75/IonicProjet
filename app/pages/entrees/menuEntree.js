@@ -14,7 +14,9 @@ import {Soupe} from './soupe'
 <ion-navbar *navbar>
     <ion-title>Entrées</ion-title>
 </ion-navbar>
-<ion-content padding class="dessert">
+
+<ion-content padding class="entree">
+
 <ion-card class="card">
   <img src="Menu/Entrees/plats/ravioli.png" height="175"/>
   <ion-card-content>
@@ -27,11 +29,12 @@ import {Soupe} from './soupe'
       responsible for bringing the music to a mass audience.
     </p>
     <button primary (click)="turnToRavioli()">
-        <ion-icon name="book"></ion-icon>
         Lire la Suite
+        <ion-icon name="book"></ion-icon>
     </button>
   </ion-card-content>
 </ion-card>
+
 
 <ion-card class="card">
   <img src="Menu/Entrees/plats/tartelette.png" height="175"/>
@@ -44,11 +47,12 @@ import {Soupe} from './soupe'
       responsible for bringing the music to a mass audience.
     </p>
     <button primary (click)="turnToTartelette()">
-        <ion-icon name="book"></ion-icon>
         Lire la Suite
+        <ion-icon name="book"></ion-icon>
     </button>
   </ion-card-content>
 </ion-card>
+
 
 <ion-card class="card">
   <img src="Menu/Entrees/plats/soupe1.jpg" height="175"/>
@@ -61,11 +65,12 @@ import {Soupe} from './soupe'
       responsible for bringing the music to a mass audience.
     </p>
     <button primary (click)="turnToSoupe()">
-        <ion-icon name="book"></ion-icon>
         Lire la Suite
+        <ion-icon name="book"></ion-icon>
     </button>
   </ion-card-content>
 </ion-card>
+
 
 <ion-card class="card">
   <img src="Menu/Entrees/plats/salade2.jpg" height="175"/>
@@ -78,18 +83,18 @@ import {Soupe} from './soupe'
       responsible for bringing the music to a mass audience.
     </p>
     <button primary (click)="turnToSalade()">
-        <ion-icon name="book"></ion-icon>
         Lire la Suite
+         <ion-icon name="book"></ion-icon>
     </button>
   </ion-card-content>
 </ion-card>
+
 </ion-content>
     `,
     directives : [IONIC_DIRECTIVES]
 })
 
 export class MenuEntree{
-    
     constructor(nav: NavController){
         this.nav = nav;
     }

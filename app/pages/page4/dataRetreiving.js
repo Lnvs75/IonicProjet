@@ -1,10 +1,10 @@
 /**
  * Created by Quentin on 28/03/2016.
  */
-import {Component} from 'angular2/core'
+import {Page} from 'angular2/core'
 import {Http} from 'angular2/http'
 
-@Component({
+@Page({
     selector: 'dataRetreiving',
     template: `
         <button (click)="onClick()">Cliquez ici!</button>
@@ -23,7 +23,7 @@ export class DataRetreiving{
     }
     onClick(){
         //alert('Vous avez clické!!!')
-        this.http.get('http://localhost:3000/recipe')
+        this.http.get('http://localhost:8100/recipe')
             .map(res => res.json())
             .subscribe(result => this.recipe = result)
     }

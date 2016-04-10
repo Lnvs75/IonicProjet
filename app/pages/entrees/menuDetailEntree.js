@@ -9,7 +9,7 @@ import {Page} from 'ionic-angular';
     <ion-title>Entrées</ion-title>        
 </ion-navbar>
 <ion-content>
-<ion-card class="card">
+<ion-card class="card1">
   <img src="Menu/Entrees/plats/ravioli.png" height="175"/>
   <ion-card-content>
     <ion-card-title>

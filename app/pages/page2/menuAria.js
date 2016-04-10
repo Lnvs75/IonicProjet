@@ -5,6 +5,7 @@ import {MenuRepas} from '../repas/menuRepas';
 import {MenuCocktail} from '../cocktails/menuCocktail';
 
 @Page({
+
 	template:`
 <ion-navbar *navbar>
 	<ion-title>Menu</ion-title>
@@ -68,6 +69,7 @@ export class MenuAria{
 	turnToEntree(){
 		this.nav.push(MenuEntree);
 	}
+
 
 	turnToRepas(){
 		this.nav.push(MenuRepas);
