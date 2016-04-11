@@ -1,31 +1,117 @@
 .dessert{
 
+  background-image: url("http://images.123hdwallpapers.com/20150712/dessert-cake-pink-cream-food-hd-wallpaper-1680x1050.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.entree{
+  background-image: url("http://vincentpoillet.com/wp-content/plugins/magic-gallery/uploads/25/francotte%C2%A9vincent-poillet.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
 }
 
-.card {
+.rep{
+  background-image: url("https://images4.alphacoders.com/646/646937.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+
+.cardE {
     width: 450px;
+    background-color: #E9967A;
+    margin-left: 130px;
 }
 
-.card img{
+.cardE img{
     height: 260px;
 }
 
-.card p{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 200px;
+
+
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 200px;
+  color: black;
+  padding-top: 15px;
 
 }
 
-.card1{
+.cardE button{
+  margin-top: 10px;
+  background-color: #CD5C5C;
+}
+
+.cardE button:active{
+  background-color: #FA8072;
+}
+
+
+.cardR {
+  width: 450px;
+  background-color: #DAA520;
+  margin-left: 130px;
+}
+
+.cardR img{
+  height: 260px;
+}
+
+.cardR button{
+  margin-top: 10px;
+  background-color: #B8860B;
+}
+
+.cardR button:active{
+  background-color: #B8860B;
+}
+
+
+.cardD {
+  width: 450px;
+  background-color: #FFB6C1;
+  margin-left: 130px;
+}
+
+.cardD img{
+  height: 260px;
+}
+
+
+
+.cardD button{
+  margin-top: 10px;
+  background-color: #D87093;
+}
+
+.cardD button:active{
+  background-color: #D87093;
+}
+
+
+
+
+
+
+
+.cardDD{
 
     width: 600px;
+  background-color: #FFB6C1;
 
 }
 
-.card1 img{
+.cardDD img{
     width: 600px;
     height: 350px;
 }
@@ -37,6 +123,25 @@ h2{
 }
 
 
+.cardEE{
+  width: 600px;
+  background-color: #E9967A;
+}
+
+.cardEE img{
+  width: 600px;
+  height: 350px;
+}
+
+.cardRR{
+  width: 600px;
+  background-color: #DAA520;
+}
+
+.cardRR img{
+  width: 600px;
+  height: 350px;
+}
 
 
 
