@@ -3,21 +3,23 @@
  */
 import {Page, NavController} from 'ionic-angular';
 import {MenuAria} from './pages/page2/menuAria'
-import {MenuDessert} from './pages/desserts/menuDessert';
-import {MenuEntree} from './pages/entrees/menuEntree';
+import {IONIC_DIRECTIVES} from 'ionic-angular';
 
 @Page({
     template: `
     <ion-navbar *navbar>
-      <ion-title>Home</ion-title>
+      <ion-title>Chilling Tasty</ion-title>
     </ion-navbar>
     
+    <ion-content padding class="home">
+        <app></app>
+      </ion-content>
     
-    <ion-content>
-      <p>Salut mon frère!</p>
-      <button (click)="turnToMenu()">Consulter le menu!</button>
-    </ion-content>
-    `
+    <ion-toolbar position="bottom">
+      <button (click)="turnToMenu()">Découvrir nos recettes</button>
+    </ion-toolbar>
+    `,
+    directives: [IONIC_DIRECTIVES]
 })
 
 export class Showcase{

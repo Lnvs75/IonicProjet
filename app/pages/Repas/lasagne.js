@@ -1,6 +1,7 @@
 /**
  * Created by yaren on 08/04/2016.
  */
+
 /**
  * Created by loic on 05/04/2016.
  */
@@ -11,8 +12,8 @@ import {Page} from 'ionic-angular';
 <ion-navbar *navbar>
     <ion-title>Repas</ion-title>        
 </ion-navbar>
-<ion-content class="dessert">
-<ion-card class="card">
+<ion-content class="rep">
+<ion-card class="cardRR">
   <img src="Menu/Repas/lasagne.jpg" height="175"/>
   <ion-card-content>
     <ion-card-title>

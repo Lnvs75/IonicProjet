@@ -1,6 +1,8 @@
 import {Page, NavController} from 'ionic-angular'
 import {MenuEntree} from '../entrees/menuEntree'
 import {MenuDessert} from '../desserts/menuDessert';
+import {MenuRepas} from '../repas/menuRepas';
+
 
 @Page({
 	template:`
@@ -23,6 +25,7 @@ import {MenuDessert} from '../desserts/menuDessert';
 		</ion-card-header>
 		<ion-card-content class="contentcolor">
 			Repas simples, low cost, enfin tout ce qu'il faut pour passer du bon temps sans faire attention
+			<button (click)="turnToRepas()">Consultez les repas!</button>
 		</ion-card-content>
 	</ion-card>
 	<ion-card class="mycardparams desserts">
@@ -50,4 +53,9 @@ export class MenuAria{
 	turnToEntree(){
 		this.nav.push(MenuEntree);
 	}
+
+	turnToRepas(){
+		this.nav.push(MenuRepas);
+	}
+
 }

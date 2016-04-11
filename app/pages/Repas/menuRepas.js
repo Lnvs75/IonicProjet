@@ -16,8 +16,8 @@ import {NavController} from 'ionic-angular'
  <ion-navbar *navbar>
     <ion-title>Desserts</ion-title>
 </ion-navbar>
-<ion-content padding class="repas">
-<ion-card class="card">
+<ion-content class="rep">
+<ion-card class="cardR">
   <img src="Menu/Repas/lasagne.jpg"/>
   <ion-card-content>
     <ion-card-title>
@@ -34,7 +34,7 @@ import {NavController} from 'ionic-angular'
     </button>
   </ion-card-content>
 </ion-card>
-<ion-card class="card">
+<ion-card class="cardR">
   <img src="Menu/Repas/cannelloni.jpg"/>
   <ion-card-content>
     <ion-card-title>

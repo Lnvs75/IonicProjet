@@ -7,8 +7,8 @@ import {MenuDetail} from './menuDetailEntree'
 <ion-navbar *navbar>
     <ion-title>Entrées</ion-title>
 </ion-navbar>
-<ion-content>
-<ion-card class="card">
+<ion-content class="entree">
+<ion-card class="cardE">
   <img src="Menu/Entrees/plats/ravioli.png" height="175"/>
   <ion-card-content>
     <ion-card-title>
@@ -19,13 +19,13 @@ import {MenuDetail} from './menuDetailEntree'
       The most popular industrial group ever, and largely
       responsible for bringing the music to a mass audience.
     </p>
-    <button primary>
+    <button>
         Lire la Suite
         <ion-icon name="book"></ion-icon>
     </button>
   </ion-card-content>
 </ion-card>
-<ion-card class="card">
+<ion-card class="cardE">
   <img src="Menu/Entrees/plats/tartelette.png" height="175"/>
   <ion-card-content>
     <ion-card-title>
@@ -41,7 +41,7 @@ import {MenuDetail} from './menuDetailEntree'
     </button>
   </ion-card-content>
 </ion-card>
-<ion-card class="card">
+<ion-card class="cardE">
   <img src="Menu/Entrees/plats/soupe1.jpg" height="175"/>
   <ion-card-content>
     <ion-card-title>
@@ -57,7 +57,7 @@ import {MenuDetail} from './menuDetailEntree'
     </button>
   </ion-card-content>
 </ion-card>
-<ion-card class="card">
+<ion-card class="cardE">
   <img src="Menu/Entrees/plats/salade2.jpg" height="175"/>
   <ion-card-content>
     <ion-card-title>

@@ -15,7 +15,7 @@ import {NavController} from 'ionic-angular'
 </ion-navbar>
 
 <ion-content padding class="dessert">
-<ion-card class="card">
+<ion-card class="cardD">
   <img src="Menu/Desserts/MuffinChoco.jpg"/>
   <ion-card-content>
     <ion-card-title>
@@ -34,7 +34,7 @@ import {NavController} from 'ionic-angular'
   </ion-card-content>
 </ion-card>
 
-<ion-card class="card">
+<ion-card class="cardD">
   <img src="Menu/Desserts/TartePomme.jpg"/>
   <ion-card-content>
     <ion-card-title>
@@ -52,7 +52,7 @@ import {NavController} from 'ionic-angular'
   </ion-card-content>
 </ion-card>
 
-<ion-card class="card">
+<ion-card class="cardD">
   <img src="Menu/Desserts/GateauChoco.jpg"/>
   <ion-card-content>
     <ion-card-title>

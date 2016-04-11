@@ -13,7 +13,7 @@ import {Page} from 'ionic-angular';
 </ion-navbar>
 
 <ion-content padding class="dessert">
-<ion-card class="card1">
+<ion-card class="cardDD">
   <img src="Menu/Desserts/MuffinChoco.jpg"/>
   <ion-card-content>
     <ion-card-title>
