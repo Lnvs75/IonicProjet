@@ -1,30 +1,16 @@
 import {Page} from 'ionic-angular'
 import {IONIC_DIRECTIVES} from 'ionic-angular';
 import {NavController} from 'ionic-angular'
-import {MenuDetail} from './menuDetailEntree'
+import {Tartelette} from './tartelette'
+import {Soupe} from './soupe';
+
 @Page({
     template: ` 
 <ion-navbar *navbar>
     <ion-title>Entrées</ion-title>
 </ion-navbar>
 <ion-content class="entree">
-<ion-card class="cardE">
-  <img src="Menu/Entrees/plats/ravioli.png" height="175"/>
-  <ion-card-content>
-    <ion-card-title>
-        Ravioles de foie gras,
-        potiron et écume de moules marinières
-      </ion-card-title>
-    <p>
-      The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
-    </p>
-    <button>
-        Lire la Suite
-        <ion-icon name="book"></ion-icon>
-    </button>
-  </ion-card-content>
-</ion-card>
+
 <ion-card class="cardE">
   <img src="Menu/Entrees/plats/tartelette.png" height="175"/>
   <ion-card-content>
@@ -32,10 +18,10 @@ import {MenuDetail} from './menuDetailEntree'
         Tartelettes au chèvre et confit d'oignons
       </ion-card-title>
     <p>
-      The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
+      Coupez les oignons en fines lamelles. Faites chauffer de l'huile d'olive dans une sauteuse et faites-y blondir 
+        les oignons à feu doux.
     </p>
-    <button primary (click)="turnToDetail()">
+    <button primary (click)="turnToTartelette()">
         Lire la Suite
         <ion-icon name="book"></ion-icon>
     </button>
@@ -48,31 +34,15 @@ import {MenuDetail} from './menuDetailEntree'
         Soupe de pois cassés
       </ion-card-title>
     <p>
-      The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
+     Lavez les pois cassés et laisser tremper 1 heure dans de l'eau chaude.
     </p>
-    <button primary>
+    <button primary (click)="turnToSoupe()">
         Lire la Suite
         <ion-icon name="book"></ion-icon>
     </button>
   </ion-card-content>
 </ion-card>
-<ion-card class="cardE">
-  <img src="Menu/Entrees/plats/salade2.jpg" height="175"/>
-  <ion-card-content>
-    <ion-card-title>
-        Salade d’endives aux oranges et aux noix
-      </ion-card-title>
-    <p>
-      The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
-    </p>
-    <button primary>
-        Lire la Suite
-         <ion-icon name="book"></ion-icon>
-    </button>
-  </ion-card-content>
-</ion-card>
+
 </ion-content>
     `,
     directives : [IONIC_DIRECTIVES]
@@ -83,7 +53,11 @@ export class MenuEntree{
     constructor(nav: NavController){
         this.nav = nav;
     }
-    turnToDetail(){
-        this.nav.push(MenuDetail);
+    turnToTartelette(){
+        this.nav.push(Tartelette);
+    }
+
+    turnToSoupe(){
+        this.nav.push(Soupe);
     }
 }

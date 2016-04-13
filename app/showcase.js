@@ -11,12 +11,12 @@ import {IONIC_DIRECTIVES} from 'ionic-angular';
       <ion-title>Chilling Tasty</ion-title>
     </ion-navbar>
     
-    <ion-content padding class="home">
+    <ion-content padding class="homes">
         <app></app>
       </ion-content>
     
     <ion-toolbar position="bottom">
-      <button (click)="turnToMenu()">Découvrir nos recettes</button>
+      <button class = "pp" (click)="turnToMenu()">Découvrir nos recettes</button>
     </ion-toolbar>
     `,
     directives: [IONIC_DIRECTIVES]

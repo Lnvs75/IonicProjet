@@ -14,7 +14,7 @@ import {NavController} from 'ionic-angular'
 @Page({
     template: ` 
  <ion-navbar *navbar>
-    <ion-title>Desserts</ion-title>
+    <ion-title>Repas</ion-title>
 </ion-navbar>
 <ion-content class="rep">
 <ion-card class="cardR">

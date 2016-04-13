@@ -1,40 +1,61 @@
 *{padding: 0 auto;}
 
-.mybackground{
-	background-color: #9e9e9e ;
+.pu{
+  background: url('http://thumbs.dreamstime.com/z/red-gold-background-14014137.jpg');
 }
+
+.pu button{
+  background-color: transparent;
+  border: 1px solid #aa0000;
+  color: #aa0000;
+}
+
+.pu button:active{
+  background-color: transparent;
+  color: #aa0000;
+}
+
 
 
 .margintop{
 	margin-top: 15%;
-	background-image: url('http://www.quiveutdufromage.com/data/recette/entree-fraicheur-au-tartare-414x414.png');
+	background-image: url('http://sf1.viepratique.fr/wp-content/uploads/sites/2/2014/11/salade-crevettes.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
-	background-width: 100%;
+
 }
 
 
 .mycardparams{
 	height: 150px;
 	margin-bottom: 17%;
+  background-size: 100%;
 
 }
 
 .repas{
-	background-image: url('http://www.coupdepouce.com/img/photos/biz/cdp/saute-porc-poivrons410.jpg');
+	background-image: url('http://img0.mxstatic.com/wallpapers/835844bd61cb0886818a55a5793cdce6_large.jpeg');
 	background-position: center;
 	background-repeat: no-repeat;
-	background-width: 100%;
+    background-image-width: 100%;
+
 }
 
 .desserts{
 	background-image: url('http://distriburger.com/wp-content/uploads/2014/11/desserts-pour-snack-distriburger.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
-	background-width: 100%;
+
+}
+
+.cocktails{
+	background-image: url('http://www.voyage-pulse.fr/wp-content/uploads/2015/05/cocktails-tendance-%C3%A9t%C3%A9-2015.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+
 }
 
 .contentcolor{
 	background-color: #e0e0e0 ;
-	opacity: 0.8;	
+	opacity: 0.8;
 }

@@ -14,6 +14,7 @@
 
 }
 
+
 .rep{
   background-image: url("https://images4.alphacoders.com/646/646937.jpg");
   background-repeat: no-repeat;
@@ -21,7 +22,12 @@
   background-size: cover;
 }
 
-
+.cocktail{
+  background-image: url("http://www.beautiful-views.net/views/summer-holiday-color-cocktails-fruit.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 
 
@@ -99,7 +105,22 @@ p {
 }
 
 
+.cardC {
+  width: 450px;
+  background-color: #ADFF2F ;
+  margin-left: 130px;
+}
 
+
+
+.cardC button{
+  margin-top: 10px;
+  background-color: #7CFC00;
+}
+
+.cardC button:active{
+  background-color: #7CFC00 ;
+}
 
 
 
@@ -143,6 +164,15 @@ h2{
   height: 350px;
 }
 
+.cardCC{
+  width: 600px;
+  background-color: #ADFF2F;
+}
+
+.cardCC img{
+  width: 600px;
+  height: 350px;
+}
 
 
 

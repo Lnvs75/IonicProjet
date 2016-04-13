@@ -2,6 +2,7 @@ import {Page, NavController} from 'ionic-angular'
 import {MenuEntree} from '../entrees/menuEntree'
 import {MenuDessert} from '../desserts/menuDessert';
 import {MenuRepas} from '../repas/menuRepas';
+import {MenuCocktail} from '../cocktails/menuCocktail';
 
 
 @Page({
@@ -9,14 +10,15 @@ import {MenuRepas} from '../repas/menuRepas';
 <ion-navbar *navbar>
 	<ion-title>Menu</ion-title>
 </ion-navbar>
-<ion-content>
+<ion-content class="pu">
 	<ion-card class="mycardparams margintop">
 		<ion-card-header>
 			Entrée
 		</ion-card-header>
 		<ion-card-content class="contentcolor">
 			Une série d'entrée pour gourmets ou fan de plats rapides et succulents
-			<button (click)="turnToEntree()">Consulter les entrées!</button>
+			<button (click)="turnToEntree()">Consulter les entrées!
+			</button>
 		</ion-card-content>
 	</ion-card>
 	<ion-card class="mycardparams repas">
@@ -35,6 +37,15 @@ import {MenuRepas} from '../repas/menuRepas';
 		<ion-card-content class="contentcolor">
 			Personne n'a le temps pour faire attention au calories
 			<button (click)="turnToDessert()">Consulter les desserts!</button>
+		</ion-card-content>
+	</ion-card>
+	<ion-card class="mycardparams cocktails">
+		<ion-card-title>
+			Cocktails
+		</ion-card-title>
+		<ion-card-content class="contentcolor">
+			Un bon rafraichisseur pour se mettre dans l'ambiance.
+			<button (click)="turnToCocktail()">Consulter les Cocktails!</button>
 		</ion-card-content>
 	</ion-card>
 </ion-content>
@@ -56,6 +67,10 @@ export class MenuAria{
 
 	turnToRepas(){
 		this.nav.push(MenuRepas);
+	}
+
+	turnToCocktail(){
+		this.nav.push(MenuCocktail);
 	}
 
 }
